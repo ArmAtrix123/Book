@@ -8,6 +8,11 @@ body{
 }
 /*--------------Header------------*/
 .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background-color: #f1f1f1;
     padding: 20px 110px;
 }
@@ -41,11 +46,25 @@ li{
     background-color: white;
     padding-top: 60px;
     padding-bottom: 70px;
+    margin-top: 60px;
 }
 .sell-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.book_logo{
+    position: relative;
+}
+.seil{
+    position: absolute;
+    color:#f1f1f1;
+    font-size: 18px;
+    background-color: red;
+    font-weight: 500;
+    padding: 12px 17px;
+    right: 0;
+    top: 23px;
 }
 .name{
     font-size: 24px;
@@ -103,6 +122,7 @@ li{
     font-size: 16px;
 }
 .button_sell{
+    width: 520px;
     display: flex;
     justify-content: space-between;
 }
@@ -166,7 +186,7 @@ button{
     display: flex;
     align-items: center;
 }
-.author{   
+.author{  
     background-color: white;
     padding: 60px 40px 100px;
     border-radius: 10px;
@@ -243,4 +263,14 @@ button{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+.to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    padding: 15px;
 }
