@@ -1,6 +1,9 @@
 body{
     font-family: 'Tahoma', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -157,13 +160,15 @@ button{
 /*---------------About------------ */
 .about{
     background-color: #f1f1f1;
-    padding-top: 100px;
     padding-bottom: 100px;
 }
 .wrapper-about{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.about-book{
+    max-width: 455px;
 }
 .title-about{
     font-size: 32px;
@@ -217,16 +222,17 @@ button{
 .title-reader{
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 50px;
-}
-.reader-one{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 30px;
 }
-.reader-two{
+.reader-photo{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.selfy,
+.selfy1,
+.selfy2{
+    margin-top: 30px;
 }
 /*-----------Footer--------------*/
 .footer{
@@ -273,4 +279,142 @@ button{
     border: 1px solid #eeeeee;
     background-color: #ffffff;
     padding: 15px;
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .book_logo{
+        max-width: 390px;
+        margin-right: 30px;
+        min-width: 390px;
+    }
+    .about-book{
+        max-width: 367px;
+    }
+    .selfy,
+    .selfy1,
+    .selfy2{
+        width: 139px;
+        height: 139px;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 760px;
+    }
+    .navigation {
+        display: none;
+    }
+    .book_logo{
+        max-width: 300px;
+        margin-right: 30px;
+        min-width: 300px;
+    }
+    .name{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .title{
+        font-size: 46px;
+    }
+    .sub_title{
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+    .info_book{
+        font-size: 16px;
+    }
+    button{
+        padding: 10px 40px;
+        margin: 10px;
+    }
+    .button_sell{
+        width: 400px;
+    }
+    .title-about{
+        font-size: 24px;
+        margin-bottom: 29px;
+    }
+    .wrapper-about{
+        flex-wrap: wrap;
+    }
+    .about-book{
+        margin-top: 80px;
+        max-width: 100%;
+    }
+    .selfy,
+    .selfy2{
+        margin-right: 15px;
+    }
+    .selfy1{
+        display: none;
+    }
+    .title-requesetes{
+        margin-right: 200px;
+    }
+    .title-info{
+        margin-right: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 560px;
+    }
+    .sell-wrapper{
+        flex-wrap: wrap;
+    }
+    .book_logo{
+        min-width: 100%;
+        margin-bottom: 60px;
+    }
+    .book{
+        width: 100%;
+    }
+    .selfy2{
+        display: none;
+    }
+    .selfy, 
+    .selfy1{
+        margin-right: 26px;
+    }
+    .wrapper-footer{
+        flex-wrap: wrap;
+    }
+    .title-requesetes{
+        margin-right: 200px;
+    }
+    .title-info{
+        margin-right: 0;
+    }
+    .title-contact{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        width: 95%;
+    }
+    .title-contact{
+        margin-right: 200px;
+    }
+    .title-info{
+        margin-top: 40px;
+    }
+    .button_sell{
+        flex-wrap: wrap;
+    }
+    .read{
+        width: 100%;
+        padding: 20px;
+    }
+    .buy{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .container{
+        width: 95%;
+    }
 }
