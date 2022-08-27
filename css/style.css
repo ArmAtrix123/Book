@@ -417,4 +417,21 @@ button{
     .container{
         width: 95%;
     }
+    .cost{
+        font-size: 45px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .read{
+        width: 90%;
+        padding: 20px;
+    }
+    .buy{
+        width: 90%;
+        padding: 20px;
+    }
+    .cab{
+        font-size: 12px;
+    }
 }
